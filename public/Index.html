@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Website</title>
+    <link rel="stylesheet" href="../src/css/style.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <style>
+    
+    </style>
+</head>
+<body>
+  <header>
+    <!-- Hamburger Icon -->
+    <div class="menu-toggle" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+    <!-- Logo -->
+    <div class="logo">
+        <img src="../src/images/Logo.png" alt="Logo">
+    </div>
+
+    <!-- Menu Items -->
+    <div class="menu">
+        <a href="#services">Services</a>
+        <a href="#brochure">Brochure</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+        <select>
+            <option value="english">English</option>
+            <option value="hindi">Hindi</option>
+            <option value="telugu">Telugu</option>
+        </select>
+    </div>
+  </header>
+
+  <!-- Divider -->
+  <div class="divider"></div>
+
+  <!-- Full Screen Section: Spectre -->
+  <section class="full-screen" id="spectre">
+    <video autoplay muted loop id="spectre-video">
+      <source src="../src/images/spectre-video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="content">
+      <p class="spectre-text shadows">SPECTRE</p>
+      <p class="desire-text shadows">BEYOND DESIRE</p>
+      <button class="discover-btn">Discover Now</button>
+    </div>
+  </section>
+
+  <!-- Full Screen Section: Soul of Makers -->
+  <section class="full-screen" id="soul-makers">
+    <video autoplay muted loop id="soul-makers-video">
+      <source src="../src/images/soul-of-makers-video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="content">
+      <p class="voice-maker-text shadows">THE VOICE OF THE MAKER</p>
+      <p class="shadows">AN INSPIRING GREATNESS SERIES</p>
+      <button class="discover-btn">Discover Now</button>
+    </div>
+  </section>
+  
+  <!-- Full Screen Section: Our Services -->
+  <section class="full-screen full-screen-2" id="services">
+    <div class="content">
+      <p class="shadows services-text">Our Services</p>
+      <!-- <div class="services-cards">
+        
+      </div> -->
+      <div id="carouselExampleInterval" class="carousel slide sliding-services" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="3000">
+            <div class="services-card">
+              <img class="services-card-img" src="../src/images/servicesImgs/construction.jpg" alt="">
+              <div class="services-card-header">
+                <p class="services-card-text">construction</p>
+              </div>
+              <div class="services-card-body">
+                <p>Built to last, designed to impress. Our furniture is crafted with the highest quality materials and attention to detail, ensuring durability and style that will stand the test of time.</p>
+              </div>
+              <div class="services-card-footer">
+                <button class="learn-more">Learn More</button>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <div class="services-card">
+              <img class="services-card-img" src="../src/images/servicesImgs/interior.jpg" alt="">
+              <div class="services-card-header">
+                <p class="services-card-text">interior</p>
+              </div>
+              <div class="services-card-body">
+                <p>Built to last, designed to impress. Our furniture is crafted with the highest quality materials and attention to detail, ensuring durability and style that will stand the test of time.</p>
+              </div>
+              <div class="services-card-footer">
+                <button class="learn-more">Learn More</button>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <div class="services-card">
+              <img class="services-card-img" src="../src/images/servicesImgs/furniture.jpg" alt="">
+              <div class="services-card-header">
+                <p class="services-card-text">furniture</p>
+              </div>
+              <div class="services-card-body">
+                <p>Built to last, designed to impress. Our furniture is crafted with the highest quality materials and attention to detail, ensuring durability and style that will stand the test of time.</p>
+              </div>
+              <div class="services-card-footer">
+                <button class="learn-more">Learn More</button>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <div class="services-card">
+              <img class="services-card-img" src="../src/images/servicesImgs/neon-light.jpg" alt="">
+              <div class="services-card-header">
+                <p class="services-card-text">neon-light</p>
+              </div>
+              <div class="services-card-body">
+                <p>Built to last, designed to impress. Our furniture is crafted with the highest quality materials and attention to detail, ensuring durability and style that will stand the test of time.</p>
+              </div>
+              <div class="services-card-footer">
+                <button class="learn-more">Learn More</button>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <div class="services-card">
+              <img class="services-card-img" src="../src/images/servicesImgs/real-estate.jpg" alt="">
+              <div class="services-card-header">
+                <p class="services-card-text">real-estate</p>
+              </div>
+              <div class="services-card-body">
+                <p>Built to last, designed to impress. Our furniture is crafted with the highest quality materials and attention to detail, ensuring durability and style that will stand the test of time.</p>
+              </div>
+              <div class="services-card-footer">
+                <button class="learn-more">Learn More</button>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <div class="services-card">
+              <img class="services-card-img" src="../src/images/servicesImgs/teamup-investment.jpg" alt="">
+              <div class="services-card-header">
+                <p class="services-card-text">Team-up-investments</p>
+              </div>
+              <div class="services-card-body">
+                <p>Built to last, designed to impress. Our furniture is crafted with the highest quality materials and attention to detail, ensuring durability and style that will stand the test of time.</p>
+              </div>
+              <div class="services-card-footer">
+                <button class="learn-more">Learn More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+        </div>
+  </section>
+
+  <section class="recent-projects">
+    <p class="recent-projects-title shadows">Recent Projects</p>
+    <div class="projects-container">
+        <div class="project-card">
+            <img src="../src/images/Deep-Villa-Atrey-and-Associates-New-Delhi-ndia-Amazing-Architecture-House.jpg" alt="Skyline Apartments">
+            <div class="project-info">
+                <h3>Skyline Apartments</h3>
+                <button class="view-project-btn">View Project</button>
+            </div>
+        </div>
+        <div class="project-card">
+            <img src="../src/images/Deep-Villa-Atrey-and-Associates-New-Delhi-ndia-Amazing-Architecture-House.jpg" alt="Urban Oasis">
+            <div class="project-info">
+                <h3>Urban Oasis</h3>
+                <button class="view-project-btn">View Project</button>
+            </div>
+        </div>
+        <div class="project-card">
+            <img src="../src/images/R.jpeg" alt="Green City">
+            <div class="project-info">
+                <h3>Green City</h3>
+                <button class="view-project-btn">View Project</button>
+            </div>
+        </div>
+        <div class="project-card">
+            <img src="../src/images/3e0a77102970713.5f42fb894d5cb.jpg" alt="Skyline">
+            <div class="project-info">
+                <h3>Skyline</h3>
+                <button class="view-project-btn">View Project</button>
+            </div>
+        </div>
+    </div>
+    
+    </div>
+  </section>
+
+  <!-- Customer Reviews Section -->
+  <section class="customer-reviews">
+    <h2>Hear from our satisfied clients</h2>
+    <div class="review-cards">
+      <div class="review-card">
+        <p>"
+            Here’s a glowing customer review you can use for your website:
+            
+            "Maruthi Group truly exceeded our expectations! From concept to completion, their attention to detail, innovative designs, and professional execution were exceptional. The team perfectly captured our vision and brought it to life with unmatched quality and precision. Their commitment to customer satisfaction is evident in every step of the process. Whether it’s construction, interiors, or furniture, Maruthi Group is the epitome of luxury and reliability. Highly recommend them for anyone looking to transform their spaces into masterpieces!"."</p>
+        <div class="reviewer">
+          <h3>MR.THYLAM BANGARU BABU GARU</h3>
+          <p>Owner of BB Construction</p>
+        </div>
+        <div class="stars">★★★★★</div>
+      </div>
+      <div class="review-card">
+        <p>""Our hotel’s interiors have been transformed into a true masterpiece, thanks to the exceptional work by Maruthi Group, led by Sanjeev and the talented team. Their innovative designs, attention to detail, and commitment to luxury and functionality have redefined our space. The blend of elegance and modern aesthetics has left everyone in awe. Maruthi Group’s expertise in interior design is unparalleled, and we couldn’t be happier with the results!"."</p>
+        <div class="reviewer">
+          <h3>MR.SANJEEV GARU</h3>
+          <p>Owner of Nitchel Grand restuarent.</p>
+        </div>
+        <div class="stars">★★★★★</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Get in Touch Section -->
+  <section class="get-in-touch">
+    <h2>Get a free quote</h2>
+    <form action="#">
+      <input type="text" placeholder="Name" required>
+      <input type="email" placeholder="Email" required>
+      <input type="text" placeholder="Phone" required>
+      <textarea placeholder="Message" required></textarea>
+      <button type="submit" class="get-in-touch-btn">Get in Touch</button>
+    </form>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2024 Luxury Brand. All rights reserved.</p>
+  </footer>
+
+  <script src="../src/scripts/script.js"></script>
+</body>
+</html>
