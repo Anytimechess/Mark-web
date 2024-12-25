@@ -466,6 +466,9 @@ footer {
     background-color: #fff;
     color: black;
   }
+  .background-video{
+    pointer-events: none
+  }
   @media screen and (orientation:portrait){
    .recent-projects-title{
     font-size: 60px;
@@ -489,5 +492,5 @@ footer {
         font-size: 60px;
         font-weight: bold;
     }
-
+  
   }
